@@ -1,0 +1,16 @@
+@page "/karra"
+
+<Link></Link>
+
+<h1>Ko'paytirish jadvali</h1>
+
+<input placeholder="birorta son kiriting" type="number" @bind-value="son"/>
+
+@for(int i = 1; i <= 9; i++)
+{
+    <p>@son * @i = @(son * i)</p>
+}
+
+@code {
+    private int son = 0;
+}
